@@ -1,24 +1,50 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import './nav.css';
+import { HiOutlineMenuAlt3 } from 'react-icons/hi';
+import { useState } from 'react';
+import { links, socials } from '../../linkData';
+import { FaTimes } from 'react-icons/fa';
 const Nav = () => {
+  const [showNav, setShowNav] = useState(true);
+  const handleNavbar = () => {
+    setShowNav(!showNav);
+  };
+  console.log(links);
   return (
-    <header className='header'>
-      <div className='logo-container'>
-        <h2 className='logo'>S.Fayazi</h2>
-      </div>
-      <nav className='nav'>
-        <ul>
-          <li>
-            <NavLink to='/'>Home</NavLink>
-          </li>
-          <li>
-            <NavLink to='/about'>About Me</NavLink>
-          </li>
-          <li>
-            <NavLink to='/projects'>Projects</NavLink>
-          </li>
+    <nav>
+      <div className='nav-center'>
+        <div className='nav-header'>
+          <h2 className='logo'>S.Fayazi</h2>
+          <button className='nav-toggle' onClick={handleNavbar}>
+            {showNav ? <HiOutlineMenuAlt3 /> : <FaTimes />}
+          </button>
+        </div>
+        <div
+          className={
+            showNav ? 'links-container' : 'links-container show-container'
+          }
+        >
+          <ul className='links'>
+            {links.map((link) => {
+              return (
+                <NavLink key={link.id} to={link.url}>
+                  {link.text}
+                </NavLink>
+              );
+            })}
+          </ul>
+        </div>
+        <ul className='social-icons'>
+          {socials.map((social) => {
+            return (
+              <a key={social.id} href={social.url} target={'_blank'}>
+                {social.icon}
+              </a>
+            );
+          })}
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 };
 
