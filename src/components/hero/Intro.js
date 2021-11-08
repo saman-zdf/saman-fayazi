@@ -22,7 +22,7 @@ const Intro = () => {
               dreams into reality.{' '}
             </p>
           </div>
-          <svg
+          {/* <svg
             width='75'
             height='75'
             viewBox='0 0 75 75'
@@ -77,7 +77,7 @@ const Intro = () => {
                 />
               </g>
             </g>
-          </svg>
+          </svg> */}
         </div>
       </div>
       <div className='intro-right'>

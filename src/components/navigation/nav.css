@@ -141,9 +141,7 @@ nav {
   color: var(--clr-primary-5);
   padding-left: 1.5rem;
 }
-.social-icons {
-  display: none;
-}
+
 .links-container {
   height: 0;
   overflow: hidden;
@@ -180,17 +178,5 @@ nav {
   .links a:hover {
     padding: 0;
     background: transparent;
-  }
-  .social-icons {
-    display: flex;
-  }
-  .social-icons a {
-    margin: 0 0.5rem;
-    color: var(--clr-primary-5);
-    transition: var(--transition);
-    font-size: 1.5rem;
-  }
-  .social-icons a:hover {
-    color: var(--clr-primary-7);
   }
 }

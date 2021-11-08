@@ -34,15 +34,6 @@ const Nav = () => {
             })}
           </ul>
         </div>
-        <ul className='social-icons'>
-          {socials.map((social) => {
-            return (
-              <a key={social.id} href={social.url} target={'_blank'}>
-                {social.icon}
-              </a>
-            );
-          })}
-        </ul>
       </div>
     </nav>
   );

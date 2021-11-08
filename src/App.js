@@ -4,6 +4,7 @@ import Intro from './components/hero/Intro';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/navigation/Nav';
 import Project from './components/pro/Project';
+import Footer from './components/footer/Footer';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path='/about' element={<About />} />
         <Route path='/project' element={<Project />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
