@@ -99,4 +99,7 @@
   .intro-left {
     text-align: center;
   }
+  .intro-title {
+    margin: 0 auto;
+  }
 }

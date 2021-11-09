@@ -6,12 +6,12 @@
   height: 90vh;
   position: relative;
   overflow-x: hidden;
-  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 .tools h2 {
   z-index: 9;
   text-align: center;
-  color: #333;
+  color: #fff;
   position: absolute;
   top: 70px;
 }
