@@ -1,6 +1,7 @@
 import './intro.css';
 
 import About from '../about/About';
+import Contact from '../contact/Contact';
 const Intro = () => {
   return (
     <>
@@ -31,6 +32,7 @@ const Intro = () => {
         </div>
       </div>
       <About />
+      <Contact />
     </>
   );
 };
