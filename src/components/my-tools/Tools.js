@@ -1,16 +1,20 @@
 import './tools.css';
-import { AiOutlineHtml5 } from 'react-icons/ai';
-import { FaCss3, FaReact, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { DiRuby } from 'react-icons/di';
-import { SiJavascript } from 'react-icons/si';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+
 import { tools } from '../../linkData';
 
-import image from '../../images/react-image.png';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Tools = () => {
   const [slide, setSlide] = useState(0);
-  const [color, setColor] = useState('');
+
+  useEffect(() => {
+    const timeout = setTimeout(
+      () => setSlide((slide + 1 + tools.length) % tools.length),
+      5000
+    );
+    return () => clearTimeout(timeout);
+  }, [slide]);
 
   function handleClick(posititon) {
     posititon === 'left'
@@ -20,6 +24,7 @@ const Tools = () => {
 
   return (
     <div className='tools' id='tools'>
+      <h2>Tools I use</h2>
       <FaChevronLeft
         className='arrow-left'
         onClick={() => handleClick('left')}
@@ -49,7 +54,7 @@ const Tools = () => {
                   </div>
                 </div>
                 <div className='right'>
-                  <img src={image} alt='React app' className='img-right' />
+                  <img src={tool.image} alt='React app' className='img-right' />
                 </div>
               </div>
             </div>

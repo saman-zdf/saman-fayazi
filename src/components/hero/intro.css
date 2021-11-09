@@ -69,17 +69,11 @@
   font-size: 20px;
 }
 
-.intro-scroll {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  bottom: 20px;
-}
-.intro-img {
+.intro-shape {
   width: 500px;
   height: 500px;
-  border-radius: 50%;
-  object-fit: cover;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  background-color: #177afa;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -93,4 +87,16 @@
   top: 0;
   right: -300px;
   z-index: -1;
+}
+
+@media (max-width: 800px) {
+  .intro {
+    overflow-x: hidden;
+  }
+  .intro-right {
+    display: none;
+  }
+  .intro-left {
+    text-align: center;
+  }
 }

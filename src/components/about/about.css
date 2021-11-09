@@ -43,5 +43,25 @@
 }
 
 .about-desc {
-  font-weight: 300;
+  font-weight: 400;
+  max-width: 600px;
+  font-size: 20px;
+  color: #444;
+}
+
+@media (max-width: 800px) {
+  .about {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .about-card.bg {
+    display: none;
+  }
+  .about-right {
+    text-align: center;
+  }
+  .about-desc {
+    max-width: 300px;
+    font-size: 18px;
+  }
 }

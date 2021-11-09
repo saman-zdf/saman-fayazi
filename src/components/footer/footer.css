@@ -27,3 +27,14 @@
 .social-icons a:hover {
   color: hsl(205, 90%, 76%);
 }
+
+@media (max-width: 800px) {
+  .footer {
+    height: 100px;
+  }
+  .footer-center {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

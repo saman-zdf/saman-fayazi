@@ -1,8 +1,8 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './nav.css';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { useState } from 'react';
-import { links, socials } from '../../linkData';
+import { links } from '../../linkData';
 import { FaTimes } from 'react-icons/fa';
 const Nav = () => {
   const [showNav, setShowNav] = useState(true);
