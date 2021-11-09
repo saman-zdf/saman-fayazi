@@ -1,9 +1,10 @@
+import Tools from '../my-tools/Tools';
 const Project = () => {
   return (
     <div>
-      This is project component
+      <Tools />
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
