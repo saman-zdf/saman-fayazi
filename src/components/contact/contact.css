@@ -1,3 +1,91 @@
 .contact {
-  color: red;
+  height: 80vh;
+  position: relative;
+}
+
+.contact-bg {
+  width: 20px;
+  height: 100%;
+  background-color: #2f87fa;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(30deg);
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.contact-left {
+  flex: 2;
+}
+.contact-right {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-size: 50px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+  font-weight: 300;
+  width: 60%;
+}
+.contact-icon {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #444;
+  margin: 10px 0;
+  font-size: 14px;
+  padding-left: 10px;
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 14px;
+  padding-left: 10px;
+  font-family: inherit;
+}
+
+form button {
+  border: none;
+  width: 100%;
+  background-color: #2f87fa;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in;
+}
+
+form button:hover {
+  opacity: 1;
+}
+form p {
+  margin-top: 20px;
 }
