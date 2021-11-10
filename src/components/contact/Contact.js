@@ -2,9 +2,11 @@ import './contact.css';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { FiMapPin } from 'react-icons/fi';
 import { MdOutlineMailOutline } from 'react-icons/md';
+import { BsChevronUp } from 'react-icons/bs';
 import { useRef, useState, useContext } from 'react';
 import emailjs from 'emailjs-com';
 import { ThemeContext } from '../../context';
+import { Link } from 'react-scroll';
 
 const Contact = () => {
   const initialState = {
@@ -54,7 +56,19 @@ const Contact = () => {
   return (
     <>
       <hr />
-      <div className='contact'>
+      <div className='contact' id='contact'>
+        <Link
+          activeClass='active'
+          className='arrow-up'
+          to='home'
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          style={{ cursor: 'pointer' }}
+        >
+          <BsChevronUp />
+        </Link>
         <div className='contact-bg'></div>
         <div className='contact-wrapper'>
           <div className='contact-left'>

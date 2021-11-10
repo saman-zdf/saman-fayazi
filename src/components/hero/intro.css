@@ -92,6 +92,7 @@
 @media (max-width: 800px) {
   .intro {
     overflow-x: hidden;
+    height: 85vh;
   }
   .intro-right {
     display: none;

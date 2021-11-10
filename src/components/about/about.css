@@ -51,7 +51,7 @@
 @media (max-width: 800px) {
   .about {
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   .about-card.bg {
     display: none;

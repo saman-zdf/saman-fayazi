@@ -5,6 +5,8 @@ import { useContext, useState } from 'react';
 import { links } from '../../linkData';
 import { FaTimes } from 'react-icons/fa';
 import { ThemeContext } from '../../context';
+import { Link } from 'react-scroll';
+
 const Nav = () => {
   const background = useContext(ThemeContext);
   const dark = background.state.darkMode;
@@ -36,16 +38,44 @@ const Nav = () => {
             {links.map((link) => {
               return (
                 <NavLink
+                  key={link.id}
                   style={{
                     color: dark ? '#fff' : '#333',
                   }}
-                  key={link.id}
                   to={link.url}
                 >
                   {link.text}
                 </NavLink>
               );
             })}
+            <NavLink to='/project'></NavLink>
+
+            <Link
+              activeClass='active'
+              to='about'
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              style={{ cursor: 'pointer' }}
+            >
+              About
+            </Link>
+            <Link
+              activeClass='active'
+              to='contact'
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              style={{ cursor: 'pointer' }}
+            >
+              Contact
+            </Link>
+            {/* <NavLink to='/'>Home</NavLink>
+            <NavLink to='/project'>Projects</NavLink>
+            <NavLink to='/about'>About</NavLink>
+            <NavLink to='/contact'>Contact</NavLink> */}
           </ul>
         </div>
       </div>

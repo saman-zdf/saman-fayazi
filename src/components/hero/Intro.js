@@ -6,7 +6,7 @@ import Contact from '../contact/Contact';
 const Intro = () => {
   return (
     <>
-      <div className='intro'>
+      <div className='intro' id='home'>
         <div className='intro-left'>
           <div className='intro-left-wrapper'>
             <h2 className='intro-msg'>Hello, My name is</h2>
