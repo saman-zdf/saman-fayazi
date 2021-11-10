@@ -2,7 +2,6 @@ import { NavLink } from 'react-router-dom';
 import './nav.css';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { useContext, useState } from 'react';
-import { links } from '../../linkData';
 import { FaTimes } from 'react-icons/fa';
 import { ThemeContext } from '../../context';
 import { Link } from 'react-scroll';
@@ -14,7 +13,6 @@ const Nav = () => {
   const handleNavbar = () => {
     setShowNav(!showNav);
   };
-  console.log(links);
   return (
     <nav
       style={{
@@ -35,20 +33,9 @@ const Nav = () => {
           }
         >
           <ul className='links'>
-            {links.map((link) => {
-              return (
-                <NavLink
-                  key={link.id}
-                  style={{
-                    color: dark ? '#fff' : '#333',
-                  }}
-                  to={link.url}
-                >
-                  {link.text}
-                </NavLink>
-              );
-            })}
-            <NavLink to='/project'></NavLink>
+            <NavLink to='/' style={{ color: '#333' }}>
+              Home
+            </NavLink>
 
             <Link
               activeClass='active'
@@ -72,10 +59,11 @@ const Nav = () => {
             >
               Contact
             </Link>
-            {/* <NavLink to='/'>Home</NavLink>
-            <NavLink to='/project'>Projects</NavLink>
-            <NavLink to='/about'>About</NavLink>
-            <NavLink to='/contact'>Contact</NavLink> */}
+            <li>
+              <NavLink style={{ color: '#333' }} to='/project'>
+                Project
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>

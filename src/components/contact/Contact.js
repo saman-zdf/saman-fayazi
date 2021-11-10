@@ -63,7 +63,7 @@ const Contact = () => {
           to='home'
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-70}
           duration={500}
           style={{ cursor: 'pointer' }}
         >
