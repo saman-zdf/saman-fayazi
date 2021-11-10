@@ -1,12 +1,16 @@
+import { ThemeContext } from '../../context';
 import './tools.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 import { tools } from '../../linkData';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 
 const Tools = () => {
   const [slide, setSlide] = useState(0);
+  const background = useContext(ThemeContext);
+  const dark = background.state.darkMode;
+  console.log(dark);
 
   useEffect(() => {
     const timeout = setTimeout(
@@ -23,7 +27,14 @@ const Tools = () => {
   }
 
   return (
-    <div className='tools' id='tools'>
+    <div
+      className='tools'
+      id='tools'
+      style={{
+        backgroundColor: dark ? '#777' : '#2f87fa',
+        color: dark ? '#333' : '#333',
+      }}
+    >
       <h2>Tools I use</h2>
       <FaChevronLeft
         className='arrow-left'

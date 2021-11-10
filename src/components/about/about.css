@@ -46,7 +46,6 @@
   font-weight: 400;
   max-width: 600px;
   font-size: 20px;
-  color: #444;
 }
 
 @media (max-width: 800px) {
@@ -56,6 +55,9 @@
   }
   .about-card.bg {
     display: none;
+  }
+  .about-title {
+    margin-top: 20px;
   }
   .about-right {
     text-align: center;

@@ -1,16 +1,20 @@
+hr {
+  height: 10px;
+  background-color: #2f87fa;
+}
 .contact {
-  height: 80vh;
+  height: 75vh;
   position: relative;
 }
 
 .contact-bg {
-  width: 20px;
+  width: 10px;
   height: 100%;
   background-color: #2f87fa;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%) rotate(30deg);
+  transform: translateX(-50%);
 }
 
 .contact-wrapper {
@@ -88,4 +92,23 @@ form button:hover {
 }
 form p {
   margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  hr {
+    display: none;
+  }
+  .contact {
+    height: 100vh;
+    margin-bottom: 30px;
+  }
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact-bg {
+    display: none;
+  }
+  .contact-left {
+    text-align: center;
+  }
 }

@@ -73,7 +73,6 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -100,7 +99,6 @@ p {
 }
 /* navbar */
 nav {
-  background: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
 .nav-header {
@@ -111,7 +109,6 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: var(--clr-primary-5);
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
@@ -122,13 +119,11 @@ nav {
 }
 .nav-toggle:hover {
   color: var(--clr-primary-1);
-  transform: rotate(90deg);
 }
 .logo {
   height: 40px;
 }
 .links a {
-  color: var(--clr-grey-3);
   font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);

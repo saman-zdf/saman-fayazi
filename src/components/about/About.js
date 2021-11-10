@@ -12,10 +12,13 @@ const About = () => {
       <div className='about-right'>
         <h1 className='about-title'>About Me</h1>
         <p className='about-desc'>
-          My name is Sam. I love to code everyday and also like to create apps.
-          I live currently at Perth. I will soon be graduate from Coder Academy
-          bootcamp. My hobbies are coding, reading, workouts and also I love to
-          write poems if I get inspired.
+          My name is Sam, and I enjoy meeting new people. I have a passion to
+          help others specially when they stuggling with their projects. I have
+          a routine to code on daily basis which it can help me to become a
+          better skilled programmer. I studied prgramming at Coder Academy
+          bootcamp and it was an awesome exprience for me and learned a lot. I
+          love to read, do workouts, create apps and write poems if I get
+          inspired.
         </p>
       </div>
     </div>
