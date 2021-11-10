@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   position: relative;
   overflow-x: hidden;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -25,10 +25,10 @@
   font-size: 50px;
 }
 .arrow-left {
-  left: 300px;
+  left: 150px;
 }
 .arrow-right {
-  right: 300px;
+  right: 150px;
 }
 
 .slider {
