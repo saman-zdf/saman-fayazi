@@ -33,7 +33,7 @@ const Nav = () => {
           }
         >
           <ul className='links'>
-            <NavLink to='/' style={{ color: '#333' }}>
+            <NavLink to='/' style={{ color: dark ? '#fff' : '#333' }}>
               Home
             </NavLink>
 
@@ -60,7 +60,7 @@ const Nav = () => {
               Contact
             </Link>
             <li>
-              <NavLink style={{ color: '#333' }} to='/project'>
+              <NavLink style={{ color: dark ? '#fff' : '#333' }} to='/project'>
                 Project
               </NavLink>
             </li>

@@ -103,4 +103,10 @@
   .intro-title {
     margin: 0 auto;
   }
+  .intro-name {
+    margin-bottom: 30px;
+  }
+  .intro-desc {
+    margin-top: 20px;
+  }
 }

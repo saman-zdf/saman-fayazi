@@ -21,8 +21,8 @@ const Intro = () => {
             </div>
             <div className='intro-desc'>
               <p>
-                I create a modern web applications and transform your idea and
-                dreams into reality.
+                I create modern web application and transform your ideas and
+                dream into reality.
               </p>
             </div>
           </div>
